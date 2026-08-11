@@ -158,40 +158,6 @@ export function Platform() {
           </Reveal>
         </div>
 
-
-
-
-        <Reveal className="mt-16">
-          <h3 className="text-2xl font-extrabold text-ink-foreground sm:text-3xl">
-            Development roadmap
-          </h3>
-        </Reveal>
-
-        <div className="mt-8 grid gap-5 lg:grid-cols-3">
-          {roadmap.map((r, i) => (
-            <Reveal
-              key={r.phase}
-              delay={i * 90}
-              className="rounded-3xl border border-ink-border/45 bg-ink-2/40 p-6"
-            >
-              <p className="text-sm font-bold text-ink-foreground">{r.phase}</p>
-              <p className="mt-1 text-xs font-semibold text-accent">{r.time}</p>
-              <ul className="mt-4 space-y-2">
-                {r.items.map((it) => (
-                  <li key={it} className="flex gap-2 text-[0.8rem] text-ink-muted">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent/70" />
-                    {it}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal className="mt-5 rounded-2xl border border-ink-border/45 bg-ink-2/35 px-5 py-4 text-sm leading-relaxed text-ink-muted">
-          <strong className="text-ink-foreground">Future expansion:</strong> the Republic of Ireland
-          is identified as a potential future expansion market after proven UK traction.
-        </Reveal>
       </div>
     </section>
   );
