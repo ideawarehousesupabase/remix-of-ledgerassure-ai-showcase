@@ -95,8 +95,8 @@ export function Hero() {
 
           <p className="mt-7 flex items-start gap-2 text-xs leading-relaxed text-ink-muted">
             <BadgeCheck className="mt-0.5 size-4 shrink-0 text-accent" />
-            LedgerAssure AI is currently at the validated design and IP stage. Product visuals shown
-            here are conceptual, not screenshots of a live system.
+            Designed to help UK sole traders and micro-businesses manage their finances and compliance
+            in one connected place.
           </p>
         </Reveal>
 

@@ -1,4 +1,4 @@
-import { CheckCircle2, Leaf, LifeBuoy, Plug } from "lucide-react";
+import { CheckCircle2, Leaf, LifeBuoy } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { cn } from "@/lib/utils";
 
@@ -195,13 +195,6 @@ export function Pricing() {
           </div>
         </Reveal>
 
-        <Reveal className="mt-6 flex items-start gap-3 rounded-2xl border border-dashed border-border bg-background px-5 py-4">
-          <Plug className="mt-0.5 size-4.5 shrink-0 text-muted-foreground" />
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            <strong className="text-foreground">API / embedded partners.</strong> A planned future
-            partner/API revenue stream from Year 2. No public price is assigned.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

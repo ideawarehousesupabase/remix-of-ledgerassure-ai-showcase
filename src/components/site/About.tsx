@@ -1,4 +1,4 @@
-import { AlertTriangle, Link2, Users, GraduationCap, Cpu, Building2 } from "lucide-react";
+import { AlertTriangle, Link2 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const problems = [
@@ -86,25 +86,6 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Founder &amp; CEO</p>
               </div>
             </div>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-              Domain-expert originator of the invention, with professional experience across
-              bookkeeping, financial record management, accounts payable and receivable, billing,
-              invoicing, bank reconciliation, GST/tax filing support, statutory record keeping and
-              audit and compliance support.
-            </p>
-            <div className="mt-5 space-y-3 rounded-2xl bg-muted/60 p-4">
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <Building2 className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Assistant Accountant &amp; Administrator, Dr. B. R. Ambedkar Institute of Medical
-                Science (January 2022 – August 2024).
-              </p>
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <GraduationCap className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                MSc Accounting &amp; Finance, University of Northampton — First Class with
-                Distinction (2024–2025). Dissertation on the influence of board skills on corporate
-                ESG performance.
-              </p>
-            </div>
             <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
               Responsibilities
             </p>
@@ -139,21 +120,6 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Co-Founder &amp; CTO</p>
               </div>
             </div>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-              Technical co-founder and full-time CTO, with experience across AWS/cloud technologies,
-              full-stack development, Python, JavaScript, MySQL, cloud architecture and serverless
-              application development.
-            </p>
-            <div className="mt-5 space-y-3 rounded-2xl bg-muted/60 p-4">
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <GraduationCap className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Bachelor of Engineering in Computer Engineering; Diploma in Computer Engineering.
-              </p>
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <Cpu className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Leads technical architecture and cloud infrastructure for the planned platform.
-              </p>
-            </div>
             <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
               Responsibilities
             </p>
@@ -180,15 +146,6 @@ export function About() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-10 flex flex-wrap items-center gap-3 rounded-2xl border border-border bg-muted/50 p-5">
-          <Users className="size-5 shrink-0 text-foreground/70" />
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            <strong className="text-foreground">Current status:</strong> the system and technical
-            architecture have been designed and a novelty search completed, with the architecture
-            validated at the design/IP stage. Customer interviews and Letters of Intent are
-            underway/planned. There is currently no working prototype, MVP or customer pilot.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

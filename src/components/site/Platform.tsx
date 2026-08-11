@@ -1,85 +1,12 @@
 import {
   ShieldCheck,
-  Activity,
-  Briefcase,
-  Leaf,
   Database,
   Sparkles,
   Landmark,
-  Plug,
   CheckCircle2,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const modules = [
-  {
-    icon: ShieldCheck,
-    label: "Core / Compliance",
-    title: "Compliance Core",
-    price: "£18 / month",
-    blurb:
-      "The entry-level foundation and starting point for sole traders, micro-businesses and small owner-managed businesses.",
-    points: [
-      "Financial data ingestion",
-      "Open Banking ingestion",
-      "Receipt / invoice capture",
-      "OCR-assisted document processing",
-      "AI-assisted transaction categorisation",
-      "VAT treatment and reconciliation",
-      "Making Tax Digital compliance checks",
-      "Tax-return preparation",
-      "Evidence linking",
-      "Pre-submission error checking",
-    ],
-  },
-  {
-    icon: Activity,
-    label: "Assurance",
-    title: "Continuous Assurance",
-    price: "£35 / month",
-    blurb:
-      "For businesses that are growing, seeking finance, or need stronger evidence and control visibility.",
-    points: [
-      "Continuous controls",
-      "Reconciliation checks",
-      "Completeness checks",
-      "Duplicate detection",
-      "Threshold testing",
-      "Evidence trail",
-      "Continuous assurance status",
-      "Audit / review readiness",
-    ],
-  },
-  {
-    icon: Briefcase,
-    label: "Practice",
-    title: "Practice Mode",
-    price: "£45 per client / month",
-    blurb: "Practice licensing designed for accountancy firms managing multiple clients.",
-    points: [
-      "Multi-client practice console",
-      "Multiple client management",
-      "Accountant / reviewer workspace",
-      "Centralised client visibility",
-    ],
-  },
-  {
-    icon: Leaf,
-    label: "ESG / Carbon",
-    title: "ESG / Carbon (optional)",
-    price: "£20 / month",
-    blurb:
-      "An optional module activated only when a business needs ESG/carbon reporting — using the financial evidence already captured.",
-    points: [
-      "ESG data",
-      "Carbon reporting",
-      "Scope 1 and Scope 2 estimation",
-      "Emission-factor mapping",
-      "Sustainability information",
-      "Standards mapping",
-    ],
-  },
-];
 
 const architecture = [
   { icon: Landmark, title: "Data sources", sub: "Bank data, accounting software, invoices, receipts" },
@@ -88,47 +15,6 @@ const architecture = [
   { icon: Database, title: "Unified Evidence Ledger", sub: "Single versioned, traceable data structure", highlight: true },
 ];
 
-const roadmap = [
-  {
-    phase: "Phase 1 / Compliance Core",
-    time: "Months 1–8",
-    items: [
-      "Open Banking ingestion",
-      "AI-assisted categorisation",
-      "Making Tax Digital compliance",
-      "VAT return preparation",
-      "Evidence ledger",
-      "MVP development",
-      "Initial pilot",
-    ],
-  },
-  {
-    phase: "Phase 2 / Assurance + Practice",
-    time: "Months 9–18 approximately",
-    items: [
-      "Continuous controls",
-      "Reconciliation",
-      "Completeness checks",
-      "Duplicate checks",
-      "Threshold checks",
-      "Live assurance status",
-      "Practice console",
-      "Multi-client management",
-    ],
-  },
-  {
-    phase: "Phase 3 / ESG + Carbon",
-    time: "Later development phase",
-    items: [
-      "ESG reporting",
-      "Carbon calculations",
-      "Scope 1 and Scope 2 estimation",
-      "Emission-factor mapping",
-      "Standards mapping",
-      "Sustainability data",
-    ],
-  },
-];
 
 function EvidenceMockup() {
   return (
@@ -264,36 +150,6 @@ export function Platform() {
         </Reveal>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          {modules.map((m, i) => (
-            <Reveal
-              key={m.title}
-              delay={i * 80}
-              className="rounded-3xl border border-ink-border/45 bg-ink-2/45 p-7 transition-colors hover:border-accent/45"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex size-11 items-center justify-center rounded-2xl bg-accent/15">
-                  <m.icon className="size-5 text-accent" />
-                </div>
-                <span className="rounded-full border border-ink-border/50 px-3 py-1 text-[0.66rem] font-semibold tracking-[0.14em] text-ink-muted uppercase">
-                  {m.label}
-                </span>
-              </div>
-              <h3 className="mt-5 text-xl font-bold text-ink-foreground">{m.title}</h3>
-              <p className="mt-1 text-sm font-semibold text-accent">{m.price}</p>
-              <p className="mt-3 text-sm leading-relaxed text-ink-muted">{m.blurb}</p>
-              <ul className="mt-5 grid gap-2 sm:grid-cols-2">
-                {m.points.map((p) => (
-                  <li key={p} className="flex gap-2 text-[0.8rem] leading-relaxed text-ink-muted">
-                    <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-accent" />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
-        </div>
-
-        <div className="mt-6 grid gap-6 lg:grid-cols-2">
           <Reveal>
             <EvidenceMockup />
           </Reveal>
@@ -302,46 +158,6 @@ export function Platform() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-6 flex items-start gap-3 rounded-2xl border border-ink-border/45 bg-ink-2/35 px-5 py-4">
-          <Plug className="mt-0.5 size-4.5 shrink-0 text-accent" />
-          <p className="text-sm leading-relaxed text-ink-muted">
-            <strong className="text-ink-foreground">Planned partner/API expansion.</strong> A future
-            embedded platform opportunity identified from Year 2 — not a currently available
-            feature.
-          </p>
-        </Reveal>
-
-        <Reveal className="mt-16">
-          <h3 className="text-2xl font-extrabold text-ink-foreground sm:text-3xl">
-            Development roadmap
-          </h3>
-        </Reveal>
-
-        <div className="mt-8 grid gap-5 lg:grid-cols-3">
-          {roadmap.map((r, i) => (
-            <Reveal
-              key={r.phase}
-              delay={i * 90}
-              className="rounded-3xl border border-ink-border/45 bg-ink-2/40 p-6"
-            >
-              <p className="text-sm font-bold text-ink-foreground">{r.phase}</p>
-              <p className="mt-1 text-xs font-semibold text-accent">{r.time}</p>
-              <ul className="mt-4 space-y-2">
-                {r.items.map((it) => (
-                  <li key={it} className="flex gap-2 text-[0.8rem] text-ink-muted">
-                    <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-accent/70" />
-                    {it}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal className="mt-5 rounded-2xl border border-ink-border/45 bg-ink-2/35 px-5 py-4 text-sm leading-relaxed text-ink-muted">
-          <strong className="text-ink-foreground">Future expansion:</strong> the Republic of Ireland
-          is identified as a potential future expansion market after proven UK traction.
-        </Reveal>
       </div>
     </section>
   );
