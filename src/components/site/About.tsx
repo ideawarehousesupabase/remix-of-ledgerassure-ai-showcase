@@ -120,21 +120,6 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Co-Founder &amp; CTO</p>
               </div>
             </div>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-              Technical co-founder and full-time CTO, with experience across AWS/cloud technologies,
-              full-stack development, Python, JavaScript, MySQL, cloud architecture and serverless
-              application development.
-            </p>
-            <div className="mt-5 space-y-3 rounded-2xl bg-muted/60 p-4">
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <GraduationCap className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Bachelor of Engineering in Computer Engineering; Diploma in Computer Engineering.
-              </p>
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <Cpu className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Leads technical architecture and cloud infrastructure for the planned platform.
-              </p>
-            </div>
             <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
               Responsibilities
             </p>
