@@ -86,25 +86,6 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Founder &amp; CEO</p>
               </div>
             </div>
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-              Domain-expert originator of the invention, with professional experience across
-              bookkeeping, financial record management, accounts payable and receivable, billing,
-              invoicing, bank reconciliation, GST/tax filing support, statutory record keeping and
-              audit and compliance support.
-            </p>
-            <div className="mt-5 space-y-3 rounded-2xl bg-muted/60 p-4">
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <Building2 className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                Assistant Accountant &amp; Administrator, Dr. B. R. Ambedkar Institute of Medical
-                Science (January 2022 – August 2024).
-              </p>
-              <p className="flex gap-2.5 text-xs leading-relaxed text-muted-foreground">
-                <GraduationCap className="mt-0.5 size-4 shrink-0 text-foreground/70" />
-                MSc Accounting &amp; Finance, University of Northampton — First Class with
-                Distinction (2024–2025). Dissertation on the influence of board skills on corporate
-                ESG performance.
-              </p>
-            </div>
             <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
               Responsibilities
             </p>
