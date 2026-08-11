@@ -190,6 +190,17 @@ export function Platform() {
           <span className="rounded-full border border-ink-border/50 px-3 py-1 text-xs">ESG / Carbon</span>
         </Reveal>
 
+        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+          <Reveal>
+            <EvidenceMockup />
+          </Reveal>
+          <Reveal delay={100}>
+            <AssuranceMockup />
+          </Reveal>
+        </div>
+
+
+
 
         <Reveal className="mt-16">
           <h3 className="text-2xl font-extrabold text-ink-foreground sm:text-3xl">
