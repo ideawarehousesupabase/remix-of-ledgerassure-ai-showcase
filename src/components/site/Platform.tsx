@@ -1,12 +1,8 @@
 import {
   ShieldCheck,
-  Activity,
-  Briefcase,
-  Leaf,
   Database,
   Sparkles,
   Landmark,
-  Plug,
   CheckCircle2,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
