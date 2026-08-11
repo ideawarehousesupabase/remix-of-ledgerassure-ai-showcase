@@ -15,47 +15,6 @@ const architecture = [
   { icon: Database, title: "Unified Evidence Ledger", sub: "Single versioned, traceable data structure", highlight: true },
 ];
 
-const roadmap = [
-  {
-    phase: "Phase 1 / Compliance Core",
-    time: "Months 1–8",
-    items: [
-      "Open Banking ingestion",
-      "AI-assisted categorisation",
-      "Making Tax Digital compliance",
-      "VAT return preparation",
-      "Evidence ledger",
-      "MVP development",
-      "Initial pilot",
-    ],
-  },
-  {
-    phase: "Phase 2 / Assurance + Practice",
-    time: "Months 9–18 approximately",
-    items: [
-      "Continuous controls",
-      "Reconciliation",
-      "Completeness checks",
-      "Duplicate checks",
-      "Threshold checks",
-      "Live assurance status",
-      "Practice console",
-      "Multi-client management",
-    ],
-  },
-  {
-    phase: "Phase 3 / ESG + Carbon",
-    time: "Later development phase",
-    items: [
-      "ESG reporting",
-      "Carbon calculations",
-      "Scope 1 and Scope 2 estimation",
-      "Emission-factor mapping",
-      "Standards mapping",
-      "Sustainability data",
-    ],
-  },
-];
 
 function EvidenceMockup() {
   return (
