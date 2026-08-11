@@ -190,53 +190,6 @@ export function Platform() {
           <span className="rounded-full border border-ink-border/50 px-3 py-1 text-xs">ESG / Carbon</span>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          {modules.map((m, i) => (
-            <Reveal
-              key={m.title}
-              delay={i * 80}
-              className="rounded-3xl border border-ink-border/45 bg-ink-2/45 p-7 transition-colors hover:border-accent/45"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex size-11 items-center justify-center rounded-2xl bg-accent/15">
-                  <m.icon className="size-5 text-accent" />
-                </div>
-                <span className="rounded-full border border-ink-border/50 px-3 py-1 text-[0.66rem] font-semibold tracking-[0.14em] text-ink-muted uppercase">
-                  {m.label}
-                </span>
-              </div>
-              <h3 className="mt-5 text-xl font-bold text-ink-foreground">{m.title}</h3>
-              <p className="mt-1 text-sm font-semibold text-accent">{m.price}</p>
-              <p className="mt-3 text-sm leading-relaxed text-ink-muted">{m.blurb}</p>
-              <ul className="mt-5 grid gap-2 sm:grid-cols-2">
-                {m.points.map((p) => (
-                  <li key={p} className="flex gap-2 text-[0.8rem] leading-relaxed text-ink-muted">
-                    <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-accent" />
-                    {p}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
-        </div>
-
-        <div className="mt-6 grid gap-6 lg:grid-cols-2">
-          <Reveal>
-            <EvidenceMockup />
-          </Reveal>
-          <Reveal delay={100}>
-            <AssuranceMockup />
-          </Reveal>
-        </div>
-
-        <Reveal className="mt-6 flex items-start gap-3 rounded-2xl border border-ink-border/45 bg-ink-2/35 px-5 py-4">
-          <Plug className="mt-0.5 size-4.5 shrink-0 text-accent" />
-          <p className="text-sm leading-relaxed text-ink-muted">
-            <strong className="text-ink-foreground">Planned partner/API expansion.</strong> A future
-            embedded platform opportunity identified from Year 2 — not a currently available
-            feature.
-          </p>
-        </Reveal>
 
         <Reveal className="mt-16">
           <h3 className="text-2xl font-extrabold text-ink-foreground sm:text-3xl">
