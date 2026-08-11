@@ -1,4 +1,4 @@
-import { CheckCircle2, Leaf, LifeBuoy, Plug } from "lucide-react";
+import { CheckCircle2, Leaf, LifeBuoy } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { cn } from "@/lib/utils";
 
