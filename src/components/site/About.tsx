@@ -86,28 +86,11 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Founder &amp; CEO</p>
               </div>
             </div>
-            <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
-              Responsibilities
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Khushboo leads product and commercial strategy, with a focus on compliance logic,
+              VAT / Making Tax Digital, reconciliation controls, and ESG requirements. She shapes
+              the regulatory positioning and go-to-market direction for the platform.
             </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {[
-                "Product functional requirements",
-                "Compliance logic",
-                "VAT / Making Tax Digital",
-                "Reconciliation controls",
-                "ESG requirements",
-                "Commercial strategy",
-                "Regulatory positioning",
-                "Go-to-market direction",
-              ].map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
           </Reveal>
 
           <Reveal delay={100} className="rounded-3xl border border-border bg-card p-7 shadow-soft sm:p-9">
@@ -120,29 +103,11 @@ export function About() {
                 <p className="text-sm font-semibold text-accent">Co-Founder &amp; CTO</p>
               </div>
             </div>
-            <p className="mt-5 text-xs font-semibold tracking-[0.12em] text-muted-foreground uppercase">
-              Responsibilities
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+              Shreeya leads technology and engineering, responsible for the system architecture,
+              cloud infrastructure, Open Banking and OCR integrations, and the data pipelines that
+              power the evidence ledger and later assurance capabilities.
             </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {[
-                "Technical architecture",
-                "Cloud infrastructure",
-                "Open Banking integrations",
-                "OCR integrations",
-                "LLM integrations",
-                "Data pipelines",
-                "Evidence-ledger implementation",
-                "Later Assurance development",
-                "Later ESG development",
-              ].map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
           </Reveal>
         </div>
 
