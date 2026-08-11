@@ -146,15 +146,6 @@ export function About() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-10 flex flex-wrap items-center gap-3 rounded-2xl border border-border bg-muted/50 p-5">
-          <Users className="size-5 shrink-0 text-foreground/70" />
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            <strong className="text-foreground">Current status:</strong> the system and technical
-            architecture have been designed and a novelty search completed, with the architecture
-            validated at the design/IP stage. Customer interviews and Letters of Intent are
-            underway/planned. There is currently no working prototype, MVP or customer pilot.
-          </p>
-        </Reveal>
       </div>
     </section>
   );
