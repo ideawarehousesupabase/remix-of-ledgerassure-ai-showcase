@@ -1,4 +1,4 @@
-import { AlertTriangle, Link2, Users } from "lucide-react";
+import { AlertTriangle, Link2 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const problems = [
